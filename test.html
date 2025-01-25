@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Image Slider</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .container-xxl {
+            max-width: 100%;
+        }
+
+        .text-center {
+            margin-bottom: 20px;
+        }
+
+        .img-slider-wrapper {
+            width: 100%;
+            height: 30vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .img-slider-row {
+            display: flex;
+            width: calc(100% * 8); /* Number of images */
+            height: 100%;
+            animation: slideRightToLeft 16s linear infinite;
+        }
+
+        .img-slider-container {
+            flex: 0 0 100%;
+            position: relative;
+        }
+
+        .img-slider {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        .centered-text {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        @keyframes slideRightToLeft {
+            0%, 12.5% {
+                transform: translateX(0);
+            }
+            25%, 37.5% {
+                transform: translateX(-100%);
+            }
+            50%, 62.5% {
+                transform: translateX(-200%);
+            }
+            75%, 87.5% {
+                transform: translateX(-300%);
+            }
+            100% {
+                transform: translateX(-400%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-xxl py-5 destination">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Flight Details</h6>
+                <h1 class="mb-5">Popular Places</h1>
+            </div>
+            <div class="img-slider-wrapper">
+                <div class="img-slider-row">
+                    <div class="img-slider-container">
+                        <a href="kharar-residential.html">
+                            <img src="https://hblimg.mmtcdn.com/content/hubble/img/new_dest_imagemar/mmt/activities/m_Goa_1_l_1414_2121.jpg" alt="Goa" class="img-fluid img-slider">
+                            <div class="centered-text">Goa</div>
+                        </a>
+                    </div>
+                    <div class="img-slider-container">
+                        <a href="chandigarh.html">
+                            <img src="https://hblimg.mmtcdn.com/content/hubble/img/manali/mmt/destination/m_Landscape_l_400_640.jpg" alt="Manali" class="img-fluid img-slider">
+                            <div class="centered-text">Manali</div>
+                        </a>
+                    </div>
+                    <div class="img-slider-container">
+                        <a href="mohali-residential.html">
+                            <img src="https://hblimg.mmtcdn.com/content/hubble/img/new_dest_imagemar/mmt/activities/m_Srinagar_4_l_800_1200.jpg" alt="Srinagar" class="img-fluid img-slider">
+                            <div class="centered-text">Srinagar</div>
+                        </a>
+                    </div>
+                    <div class="img-slider-container">
+                        <a href="zirakpur-residential.html">
+                            <img src="https://hblimg.mmtcdn.com/content/hubble/img/new_dest_imagemar/mmt/activities/m_Munnar_1_l_1025_1869.jpg" alt="Munnar" class="img-fluid img-slider">
+                            <div class="centered-text">Munnar</div>
+                        </a>
+                    </div>
+                    <div class="img-slider-container">
+                        <a href="kharar-residential.html">
+                            <img src="https://hblimg.mmtcdn.com/content/hubble/img/alleppey/mmt/destination/pic5.jpg.jpg" alt="Alleppey" class="img-fluid img-slider">
+                            <div class="centered-text">Alleppey</div>
+                        </a>
+                    </div>
+                    <div class="img-slider-container">
+                        <a href="chandigarh.html">
+                            <img src="https://hblimg.mmtcdn.com/content/hubble/img/gangtok/mmt/destination/m_Gangtok_activity_heriage_l_687_1061.jpg" alt="Gangtok" class="img-fluid img-slider">
+                            <div class="centered-text">Gangtok</div>
+                        </a>
+                    </div>
+                    <div class="img-slider-container">
+                        <a href="mohali-residential.html">
+                            <img src="https://hblimg.mmtcdn.com/content/hubble/img/gulmarg/mmt/destination/m_destination-gulmarg-landscape_l_400_640.jpg" alt="Gulmarg" class="img-fluid img-slider">
+                            <div class="centered-text">Gulmarg</div>
+                        </a>
+                    </div>
+                    <div class="img-slider-container">
+                        <a href="zirakpur-residential.html">
+                            <img src="https://hblimg.mmtcdn.com/content/hubble/img/aulidestimage/mmt/activities/m_Auli_MarNew_2_l_800_1200.png" alt="Auli" class="img-fluid img-slider">
+                            <div class="centered-text">Auli</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
