@@ -35,7 +35,7 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show video.mp4 position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -100,7 +100,7 @@
                         <div class="dropdown-menu m-0">
                             <a href="usatoindia.html" class="dropdown-item">USA to India</a>
                             <a href="indiatousa.html" class="dropdown-item">India to USA</a>
-                            <a href="usatochennai.html" class="dropdown-item">USA to Chennai Flightss</a>
+                            <a href="usatochennai.html" class="dropdown-item">USA to Chennai Flights</a>
                             <a href="1.html" class="dropdown-item">USA to Bangalore Flights</a>
                             <a href="2.html" class="dropdown-item">USA to Hyderabad Flights</a>
                             <a href="3.html" class="dropdown-item">USA to Ahmedabad Flights</a>
@@ -163,6 +163,10 @@
         <!-- Who we are Start -->
         <div class="hero-header10">
             <div class="container10">
+                <video autoplay muted loop playsinline class="video-background">
+                    <source src="../img/video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 <div class="header">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyw5r5F8XQ46yW0kHgR_EY-8bvZvsSZdv3eg&s" alt="Flight Logo">
                     <!-- Replace 'flight-logo.png' with the path to your logo -->
@@ -269,8 +273,8 @@
         <div class="container-xxl py-5 destination">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title bg-white text-center text-primary px-3">Flight Details</h6>
-                    <h1 class="mb-5">Details of flights</h1>
+                    <h6 class="section-title video.mp4 text-center text-primary px-3">Flight Options</h6>
+                  
                 </div>
                 <div class="card-container">
                     <div class="card-container d-flex flex-wrap justify-content-between">
@@ -690,7 +694,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <h6 class="section-title bg-white text-start text-primary pe-3">Who we are </h6>
+                        <h6 class="section-title text-start text-primary pe-3">Who we are </h6>
                         <h1 class="mb-4">Welcome to
                             <span class="text-primary">Tourist</span>
                         </h1>
@@ -740,199 +744,230 @@
 
                     <h1 class="mb-5">Details of Tour</h1>
                 </div>
-                <div class="card-container">
-                    <!-- Card 1 -->
-                    <div class="card">
-                        <div class="card-header">
-                            <p class="price">₹12,600.00</p>
+                <div class="package-container">
+                    <!-- Package Card 1 -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://cdn.shopify.com/s/files/1/0658/6194/3460/files/Beutifull-Solang-Valley-Shimla-Manali-Tour-Pakcages_e1456719-ad63-4f02-bd1c-6a7fb0c9eeee.jpg?v=1716546680" alt="Shimla Manali Tour">
                         </div>
-                        <div class="card-image">
-                            <img src="https://cdn.shopify.com/s/files/1/0658/6194/3460/files/Beutifull-Solang-Valley-Shimla-Manali-Tour-Pakcages_e1456719-ad63-4f02-bd1c-6a7fb0c9eeee.jpg?v=1716546680">
-                        </div>
-                        <div class="card-details">
-                            <h2>Shimla Manali Tour</h2>
-                            <p class="duration">
-                                <span class="icon">⏰</span> 6 DAYS - 5 NIGHTS
-                            </p>
-                            <div class="footer">
-                                <div class="stars">⭐⭐⭐⭐⭐</div>
-                                <button class="read-more" onclick="window.location.href='tel:+919501737767'">Book</button>
+                        <div class="package-content">
+                            <h3 class="package-title">Shimla Manali Tour</h3>
+                            <div class="package-meta">
+                                <span><i class="fa fa-clock"></i> 6 Days - 5 Nights</span>
+                                <span><i class="fa fa-tag"></i> ₹12,600.00</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                </div>
+                                <button class="btn-book" onclick="window.location.href='tel:+919501737767'">Book Now</button>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Card 2 -->
-                    <div class="card">
-                        <div class="card-header">
-                            <p class="price">₹15,200.00</p>
-                        </div>
-                        <div class="card-image">
+                
+                    <!-- Package Card 2 -->
+                    <div class="package-card">
+                        <div class="package-image">
                             <img src="https://www.bontravelindia.com/wp-content/uploads/2022/11/Munnar-Tourism-Kerala.jpg" alt="Kerala Tour">
                         </div>
-                        <div class="card-details">
-                            <h2>Kerala Tour</h2>
-                            <p class="duration">
-                                <span class="icon">⏰</span> 4 DAYS - 3 NIGHTS
-                            </p>
-                            <div class="footer">
-                                <div class="stars">⭐⭐⭐⭐⭐</div>
-                                <button class="read-more" onclick="window.location.href='tel:+919501737767'">Book</button>
+                        <div class="package-content">
+                            <h3 class="package-title">Kerala Tour</h3>
+                            <div class="package-meta">
+                                <span><i class="fa fa-clock"></i> 4 Days - 3 Nights</span>
+                                <span><i class="fa fa-tag"></i> ₹15,200.00</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                </div>
+                                <button class="btn-book" onclick="window.location.href='tel:+919501737767'">Book Now</button>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Card 3 -->
-                    <div class="card">
-                        <div class="card-header">
-                            <p class="price">₹18,000.00</p>
+                
+                    <!-- Package Card 3 -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://www.backpackstays.com/wp-content/uploads/2023/01/Kashmir-Package-1.webp" alt="Kashmir Tour">
                         </div>
-                        <div class="card-image">
-                            <img src="https://th.bing.com/th/id/R.d120dde546be223cdef6130da09c1477?rik=h9CNe0%2bUa9mjPg&riu=http%3a%2f%2fseo.superbmytrip.com%2fassets%2fimages%2fe0818091-71a7-41fc-8aa2-12f2d7dd3606.jpg&ehk=mNnrBwgFZoYVdFuJvvNGElDTovu1a3tlh9eLljik48k%3d&risl=&pid=ImgRaw&r=0"
-                                alt="Kashmir Tour">
-                        </div>
-                        <div class="card-details">
-                            <h2>Kashmir Tour</h2>
-                            <p class="duration">
-                                <span class="icon">⏰</span> 7 DAYS - 6 NIGHTS
-                            </p>
-                            <div class="footer">
-                                <div class="stars">⭐⭐⭐⭐⭐</div>
-                                <button class="read-more" onclick="window.location.href='tel:+919501737767'">Book</button>
+                        <div class="package-content">
+                            <h3 class="package-title">Kashmir Tour</h3>
+                            <div class="package-meta">
+                                <span><i class="fa fa-clock"></i> 7 Days - 6 Nights</span>
+                                <span><i class="fa fa-tag"></i> ₹18,000.00</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                </div>
+                                <button class="btn-book" onclick="window.location.href='tel:+919501737767'">Book Now</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-container">
-                    <!-- Card 4 -->
-                    <div class="card">
-                        <div class="card-header">
-                            <p class="price">₹12,600.00</p>
-                        </div>
-                        <div class="card-image">
+                
+                    <!-- Package Card 4 -->
+                    <div class="package-card">
+                        <div class="package-image">
                             <img src="https://karmagroup.com/blog/wp-content/uploads/2018/01/jaipur2.jpg" alt="Rajasthan Tour">
                         </div>
-                        <div class="card-details">
-                            <h2>Rajasthan Tour</h2>
-                            <p class="duration">
-                                <span class="icon">⏰</span> 6 DAYS - 5 NIGHTS
-                            </p>
-                            <div class="footer">
-                                <div class="stars">⭐⭐⭐⭐⭐</div>
-                                <button class="read-more" onclick="window.location.href='tel:+919501737767'">Book</button>
+                        <div class="package-content">
+                            <h3 class="package-title">Rajasthan Tour</h3>
+                            <div class="package-meta">
+                                <span><i class="fa fa-clock"></i> 6 Days - 5 Nights</span>
+                                <span><i class="fa fa-tag"></i> ₹12,600.00</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                </div>
+                                <button class="btn-book" onclick="window.location.href='tel:+919501737767'">Book Now</button>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Card 5 -->
-                    <div class="card">
-                        <div class="card-header">
-                            <p class="price">₹15,200.00</p>
+                
+                    <!-- Package Card 5 -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://c.pxhere.com/photos/95/2e/taj_mahal_agra_india_palace_nice_tourists_world_heritage_unesco-723468.jpg!d" alt="Agra Tour">
                         </div>
-                        <div class="card-image">
-                            <img src="https://c.pxhere.com/photos/95/2e/taj_mahal_agra_india_palace_nice_tourists_world_heritage_unesco-723468.jpg!d"
-                                alt="Agra Tour">
-                        </div>
-                        <div class="card-details">
-                            <h2>Agra Tour</h2>
-                            <p class="duration">
-                                <span class="icon">⏰</span> 4 DAYS - 3 NIGHTS
-                            </p>
-                            <div class="footer">
-                                <div class="stars">⭐⭐⭐⭐⭐</div>
-                                <button class="read-more" onclick="window.location.href='tel:+919501737767'">Book</button>
+                        <div class="package-content">
+                            <h3 class="package-title">Agra Tour</h3>
+                            <div class="package-meta">
+                                <span><i class="fa fa-clock"></i> 4 Days - 3 Nights</span>
+                                <span><i class="fa fa-tag"></i> ₹15,200.00</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                </div>
+                                <button class="btn-book" onclick="window.location.href='tel:+919501737767'">Book Now</button>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Card 6 -->
-                    <div class="card">
-                        <div class="card-header">
-                            <p class="price">₹18,000.00</p>
-                        </div>
-                        <div class="card-image">
+                
+                    <!-- Package Card 6 -->
+                    <div class="package-card">
+                        <div class="package-image">
                             <img src="https://th.bing.com/th/id/OIP.B0iLyEkjkiqaLISv8x3ETAHaE8?rs=1&pid=ImgDetMain" alt="Varanasi Tour">
                         </div>
-                        <div class="card-details">
-                            <h2>Varanasi Tour</h2>
-                            <p class="duration">
-                                <span class="icon">⏰</span> 7 DAYS - 6 NIGHTS
-                            </p>
-                            <div class="footer">
-                                <div class="stars">⭐⭐⭐⭐⭐</div>
-                                <button class="read-more" onclick="window.location.href='tel:+919501737767'">Book</button>
+                        <div class="package-content">
+                            <h3 class="package-title">Varanasi Tour</h3>
+                            <div class="package-meta">
+                                <span><i class="fa fa-clock"></i> 7 Days - 6 Nights</span>
+                                <span><i class="fa fa-tag"></i> ₹18,000.00</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                </div>
+                                <button class="btn-book" onclick="window.location.href='tel:+919501737767'">Book Now</button>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card-container">
-                    <!-- Card 7 -->
-                    <div class="card">
-                        <div class="card-header">
-                            <p class="price">₹12,600.00</p>
-                        </div>
-                        <div class="card-image">
+                
+                    <!-- Package Card 7 -->
+                    <div class="package-card">
+                        <div class="package-image">
                             <img src="https://image3.mouthshut.com/images/ImagesR/2017/12/India-Gate-Delhi-925753990-9248791-1.jpg" alt="Delhi Tour">
                         </div>
-                        <div class="card-details">
-                            <h2>Delhi Tour</h2>
-                            <p class="duration">
-                                <span class="icon">⏰</span> 6 DAYS - 5 NIGHTS
-                            </p>
-                            <div class="footer">
-                                <div class="stars">⭐⭐⭐⭐⭐</div>
-                                <button class="read-more" onclick="window.location.href='tel:+919501737767'">Book</button>
+                        <div class="package-content">
+                            <h3 class="package-title">Delhi Tour</h3>
+                            <div class="package-meta">
+                                <span><i class="fa fa-clock"></i> 6 Days - 5 Nights</span>
+                                <span><i class="fa fa-tag"></i> ₹12,600.00</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                </div>
+                                <button class="btn-book" onclick="window.location.href='tel:+919501737767'">Book Now</button>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Card 8 -->
-                    <div class="card">
-                        <div class="card-header">
-                            <p class="price">₹15,200.00</p>
+                
+                    <!-- Package Card 8 -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://www.holidaymonk.com/wp-content/uploads/2024/07/Goa-Tour-Package-1.webp" alt="Goa Tour">
                         </div>
-                        <div class="card-image">
-                            <img src="https://th.bing.com/th/id/R.f8e234b3b1c8cfd1ee54c4bf57c54e63?rik=e0FQs%2b%2furhS0bA&riu=http%3a%2f%2fmedia.cntraveller.in%2fwp-content%2fuploads%2f2016%2f10%2fcalangute.jpg&ehk=qfoRg%2fQhmOTjHApSRApRUKS9FP%2fFU6uo%2f3IPzMOvt0M%3d&risl=&pid=ImgRaw&r=0"
-                                alt="Goa Beach Tour">
-                        </div>
-                        <div class="card-details">
-                            <h2>Goa Beach Tour</h2>
-                            <p class="duration">
-                                <span class="icon">⏰</span> 4 DAYS - 3 NIGHTS
-                            </p>
-                            <div class="footer">
-                                <div class="stars">⭐⭐⭐⭐⭐</div>
-                                <button class="read-more" onclick="window.location.href='tel:+919501737767'">Book</button>
+                        <div class="package-content">
+                            <h3 class="package-title">Goa Tour</h3>
+                            <div class="package-meta">
+                                <span><i class="fa fa-clock"></i> 4 Days - 3 Nights</span>
+                                <span><i class="fa fa-tag"></i> ₹15,200.00</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                </div>
+                                <button class="btn-book" onclick="window.location.href='tel:+919501737767'">Book Now</button>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Card 9-->
-                    <div class="card">
-                        <div class="card-header">
-                            <p class="price">₹18,000.00</p>
+                
+                    <!-- Package Card 9 -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <img src="https://media1.thrillophilia.com/filestore/nfjp51x9ccnj66xxljgtr6xxsvid_pangong11.jpg?w=753&h=450&dpr=2.0" alt="Leh Ladakh Tour">
                         </div>
-                        <div class="card-image">
-                            <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_1200,h_800/activities/srdigpzrlsdqcet7fsi3.jpg"
-                                alt="Amritsar Tour">
-                        </div>
-                        <div class="card-details">
-                            <h2>Amritsar Tour</h2>
-                            <p class="duration">
-                                <span class="icon">⏰</span> 7 DAYS - 6 NIGHTS
-                            </p>
-                            <div class="footer">
-                                <div class="stars">⭐⭐⭐⭐⭐</div>
-                                <button class="read-more" onclick="window.location.href='tel:+919501737767'">Book</button>
+                        <div class="package-content">
+                            <h3 class="package-title">Leh Ladakh Tour</h3>
+                            <div class="package-meta">
+                                <span><i class="fa fa-clock"></i> 7 Days - 6 Nights</span>
+                                <span><i class="fa fa-tag"></i> ₹18,000.00</span>
+                            </div>
+                            <div class="package-footer">
+                                <div class="rating">
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                    <i class="fa fa-star text-primary"></i>
+                                </div>
+                                <button class="btn-book" onclick="window.location.href='tel:+919501737767'">Book Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
             <!-- Slideshow container -->
-            <div class="container-xxl py-5 destination">
+            <!-- <div class="container-xxl py-5 destination">
                 <div class="container">
                     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                        <h6 class="section-title bg-white text-center text-primary px-3">Flight Details</h6>
+                        <h6 class="section-title  text-center text-primary px-3">Flight Details</h6>
                         <h1 class="mb-5">Popular Places</h1>
                     </div>
                     <div class="img-slider-wrapper">
@@ -993,7 +1028,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
 
 
@@ -1004,41 +1039,41 @@
             <div class="container-xxl py-5 destination">
                 <div class="container">
                     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                        <h6 class="section-title bg-white text-center text-primary px-3">Destination</h6>
+                        <h6 class="section-title video.mp4 text-center text-primary px-3">Destination</h6>
                         <h1 class="mb-5">Popular Destination</h1>
                     </div>
                     <div class="row g-3">
                         <div class="col-lg-7 col-md-6">
                             <div class="row g-3">
                                 <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
-                                    <a class="position-relative d-block overflow-hidden" href="">
+                                    <div class="position-relative d-block overflow-hidden" href="">
                                         <img class="img-fluid" src="img/destination-1.jpg" alt="">
-                                        <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
-                                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Thailand</div>
-                                    </a>
+                                        <div class="video.mp4 text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
+                                        <div class="video.mp4 text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Thailand</div>
+                                    </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
-                                    <a class="position-relative d-block overflow-hidden" href="">
+                                    <div class="position-relative d-block overflow-hidden" href="">
                                         <img class="img-fluid" src="img/destination-2.jpg" alt="">
-                                        <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">25% OFF</div>
-                                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Malaysia</div>
-                                    </a>
+                                        <div class="video.mp4 text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">25% OFF</div>
+                                        <div class="video.mp4 text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Malaysia</div>
+                                    </div>
                                 </div>
                                 <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
-                                    <a class="position-relative d-block overflow-hidden" href="">
+                                    <div class="position-relative d-block overflow-hidden" href="">
                                         <img class="img-fluid" src="img/destination-3.jpg" alt="">
-                                        <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">35% OFF</div>
-                                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Australia</div>
-                                    </a>
+                                        <div class="video.mp4 text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">35% OFF</div>
+                                        <div class="video.mp4 text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Australia</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
-                            <a class="position-relative d-block h-100 overflow-hidden" href="">
+                            <div class="position-relative d-block h-100 overflow-hidden" href="">
                                 <img class="img-fluid position-absolute w-100 h-100" src="img/destination-4.jpg" alt="" style="object-fit: cover;">
-                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20% OFF</div>
-                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Indonesia</div>
-                            </a>
+                                <div class="video.mp4 text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20% OFF</div>
+                                <div class="video.mp4 text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Indonesia</div>
+                            </f>
                         </div>
                     </div>
                 </div>
@@ -1055,7 +1090,7 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title bg-white text-center text-primary px-3">Holiday packages</h6>
+                    <h6 class="section-title video.mp4 text-center text-primary px-3">Holiday packages</h6>
                     <h1 class="mb-5">Awesome Holiday packages</h1>
                 </div>
                 <div class="row g-4 justify-content-center">
@@ -1068,7 +1103,7 @@
                                 <small class="flex-fill text-center border-end py-2">
                                     <i class="fa fa-map-marker-alt text-primary me-2"></i>Thailand</small>
                                 <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 Days</small>
                                 <small class="flex-fill text-center py-2">
                                     <i class="fa fa-user text-primary me-2"></i>2 Person</small>
                             </div>
@@ -1098,7 +1133,7 @@
                                 <small class="flex-fill text-center border-end py-2">
                                     <i class="fa fa-map-marker-alt text-primary me-2"></i>Indonesia</small>
                                 <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 Days</small>
                                 <small class="flex-fill text-center py-2">
                                     <i class="fa fa-user text-primary me-2"></i>2 Person</small>
                             </div>
@@ -1128,7 +1163,7 @@
                                 <small class="flex-fill text-center border-end py-2">
                                     <i class="fa fa-map-marker-alt text-primary me-2"></i>Malaysia</small>
                                 <small class="flex-fill text-center border-end py-2">
-                                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                                    <i class="fa fa-calendar-alt text-primary me-2"></i>3 Days</small>
                                 <small class="flex-fill text-center py-2">
                                     <i class="fa fa-user text-primary me-2"></i>2 Person</small>
                             </div>
@@ -1213,7 +1248,7 @@
             <div class="container-xxl py-5">
                 <div class="container">
                     <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                        <h6 class="section-title bg-white text-center text-primary px-3">Travel Guide</h6>
+                        <h6 class="section-title video.mp4 text-center text-primary px-3">Travel Guide</h6>
                         <h1 class="mb-5"> Our Partners </h1>
                     </div>
                     <div class="logo-slider">
