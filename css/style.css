@@ -2488,7 +2488,7 @@ button[type="submit"]:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 100%; /* Position the tooltip below the phone number */
-  left: 20%;
+  left: 15vw;
   margin-top: 10px;
   z-index: 1000;
 }
@@ -2572,3 +2572,17 @@ button[type="submit"]:hover {
 
 
 
+
+
+.svg-overlay {
+  position: absolute;
+  top: 0;
+  left: 40vw;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; /* Place SVG above video but below form */
+  pointer-events: none; /* Prevent interaction with the SVG */
+}
