@@ -2549,19 +2549,6 @@ button[type="submit"]:hover {
   }
 }
 
-@media (max-width: 767px) {
-  .tooltip-feature {
-    width: 80vw !important;
-        padding: 10px;
-        left: 51%;
-  }
-
-  .point-wrap {
-    width: 100%; /* Full width on small screens */
-    justify-content: flex-start;
-  }
-}
-
 
 /* Increase the gap between items inside the flex container */
 
@@ -2585,4 +2572,22 @@ button[type="submit"]:hover {
   justify-content: center;
   z-index: 2; /* Place SVG above video but below form */
   pointer-events: none; /* Prevent interaction with the SVG */
+}
+
+
+@media (max-width: 767px) {
+  .tooltip-feature {
+    width: 80vw !important;
+        padding: 10px;
+        left: 51%;
+  }
+
+  .point-wrap {
+    width: 100%; /* Full width on small screens */
+    justify-content: flex-start;
+  }
+  .svg-overlay{
+    left: 20vw;
+    z-index: -1 !important;
+  }
 }
