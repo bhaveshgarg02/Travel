@@ -2541,7 +2541,7 @@ button[type="submit"]:hover {
 /* Ensure it looks good on larger screens */
 @media (min-width: 768px) {
   .tooltip-feature {
-    width: 300px; /* Wider tooltip for larger screens */
+    width: 300px;
   }
 
   .point-wrap {
@@ -2551,8 +2551,9 @@ button[type="submit"]:hover {
 
 @media (max-width: 767px) {
   .tooltip-feature {
-    width: 100%;
-    padding: 10px;
+    width: 80vw !important;
+        padding: 10px;
+        left: 51%;
   }
 
   .point-wrap {
@@ -2567,6 +2568,7 @@ button[type="submit"]:hover {
 /* Additional margin for small elements if necessary */
 
 /* If needed, you can also add a margin to individual items for more control */
+
 
 
 
