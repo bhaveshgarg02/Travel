@@ -1,9 +1,21 @@
 /********** Template CSS **********/
 :root {
-  --primary: #0277bd;
+  --primary: #31b4dc;
   --secondary: #4ba3b4;
   --light: #f2e1c1;
-  --dark: #0277bd;
+  --dark: #31b4dc;
+}
+
+a[href*="https://elfsight.com"]
+{
+  display: none !important; /* Ensure the link is always hidden */
+}
+a[href*="https://elfsight.com"]
+{
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  filter: opacity(0); /* Ensures the link is not clickable */
 }
 
 .fw-medium {
@@ -82,7 +94,7 @@
   font-family: "Nunito", sans-serif;
   position: relative;
   margin-right: 25px;
-  color: #0277bd !important;
+  color: black !important;
   font-size: 18px;
   font-weight: 600;
   outline: none;
@@ -98,6 +110,7 @@
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
   color: var(--primary) !important;
+  text-decoration: none;
 }
 
 .navbar-light .navbar-brand img {
@@ -262,7 +275,7 @@ input[type="number"] {
 
 select:focus,
 input:focus {
-  border-color: #0277bd;
+  border-color: #31b4dc;
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
   outline: none;
 }
@@ -278,7 +291,7 @@ input:focus {
   margin-right: 10px;
 }
 .container10 {
-  font-family: Arial, sans-serif;
+  font-family: Nunito, sans-serif;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -287,7 +300,7 @@ input:focus {
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: Nunito, sans-serif;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -305,7 +318,7 @@ button {
 }
 
 button:hover {
-  background: #0056b3;
+  background: #31b4dc;
   transform: scale(1.05);
 }
 
@@ -592,7 +605,7 @@ a:hover {
 
 /***today***/
 .div slide {
-  font-family: Arial, sans-serif;
+  font-family: Nunito, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -648,7 +661,7 @@ a:hover {
 }
 /* General body style */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Nunito, sans-serif !important;
   margin: 0;
   padding: 0;
 }
@@ -909,7 +922,7 @@ body {
 }
 
 .flight-item i {
-  color: #0277bd;
+  color: #31b4dc;
   font-size: 3rem;
 }
 
@@ -926,7 +939,7 @@ body {
 }
 
 .flight-item button {
-  background-color: #0277bd;
+  background-color: #31b4dc;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -937,7 +950,7 @@ body {
 }
 
 .flight-item button:hover {
-  background-color: #0056b3;
+  background-color: #31b4dc;
 }
 
 /* Added padding to the column wrapper */
@@ -984,17 +997,17 @@ body {
 .form-container input:focus,
 .form-container select:focus,
 .form-container button:hover {
-  border-color: #0277bd;
+  border-color: #31b4dc;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 .form-container button {
-  background: #0277bd;
+  background: #31b4dc;
   color: #fff;
   border: none;
   cursor: pointer;
 }
 .form-container button:hover {
-  background: #0056b3;
+  background: #31b4dc;
 }
 .radio-container {
   display: flex;
@@ -1060,7 +1073,7 @@ body {
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
-  font-family: Arial, sans-serif;
+  font-family: Nunito, sans-serif;
 
   border-radius: 8px;
 
@@ -1116,7 +1129,7 @@ body {
 
 .form-container input:focus,
 .form-container select:focus {
-  border-color: #0277bd;
+  border-color: #31b4dc;
   outline: none;
 }
 
@@ -1144,7 +1157,7 @@ body {
 }
 /*google review*/
 .container {
-  font-family: Arial, sans-serif;
+  font-family: Nunito, sans-serif;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
@@ -1174,7 +1187,7 @@ body {
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #0277bd;
+  background-color: #31b4dc;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -1182,7 +1195,7 @@ body {
 }
 
 .submit-review a:hover {
-  background-color: #0056b3;
+  background-color: #31b4dc;
 }
 
 .reviews {
@@ -1281,17 +1294,18 @@ footer {
   width: 150px; /* Set equal width for all logos */
   height: 100px; /* Set equal height for all logos */
   object-fit: contain;
-  margin: 10px; /* Remove any spacing between logos */
+  margin: 10px; /* Add spacing between logos */
 }
 
 @keyframes slide {
   0% {
-    transform: translateX(100%);
-  }
-  0% {
     transform: translateX(-100%);
   }
+  100% {
+    transform: translateX(100%);
+  }
 }
+
 /*New card*/
 /* Flex container for cards */
 .card-container {
@@ -1446,14 +1460,14 @@ footer {
 }
 
 .card-details i {
-  color: #0277bd;
+  color: #31b4dc;
   margin-right: 5px;
 }
 
 /* Read More button */
 
 .read-more:hover {
-  background-color: #0056b3;
+  background-color: #31b4dc;
 }
 
 /* Responsive Design */
@@ -1477,19 +1491,22 @@ footer {
 }
 .floating-buttons button {
   width: 60px;
-  height: 60px;
+  height: 50px;
   border: none;
   background-color: #25d366; /* WhatsApp green */
   color: white;
-  font-size: 30px;
+  font-size: 22px;
   cursor: pointer;
-  margin-left: -10px;
+  margin-left: -5px;
+  padding-top: -20px !important;
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 0; /* Square buttons */
 }
 .floating-buttons .call-button {
-  background-color: #0277bd; /* Call button blue */
+  background-color: #31b4dc; /* Call button blue */
+  padding-top: -20px !important;
+  
 } /*Footer*/
 
 .footer-container {
@@ -1650,7 +1667,7 @@ footer {
 }
 /**/
 .main-container {
-  font-family: Arial, sans-serif;
+  font-family: Nunito, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1694,7 +1711,7 @@ footer {
 .airport-code {
   font-size: 20px;
   font-weight: bold;
-  color: #0277bd;
+  color: #31b4dc;
 }
 
 .location-name {
@@ -1715,7 +1732,7 @@ footer {
 }
 
 .reserve-now {
-  background-color: #0277bd;
+  background-color: #31b4dc;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -1778,7 +1795,7 @@ footer {
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
+  font-family: Nunito, sans-serif;
   text-align: center;
 }
 
@@ -1808,7 +1825,7 @@ footer {
 }
 
 .flight-icon {
-  color: #0277bd;
+  color: #31b4dc;
 }
 
 .flight-cities {
@@ -1837,7 +1854,7 @@ footer {
 }
 
 .book-now {
-  background: #0277bd;
+  background: #31b4dc;
 
   padding: 10px 15px;
   border: none;
@@ -1849,7 +1866,7 @@ footer {
 }
 
 .book-now:hover {
-  background: #0056b3;
+  background: #31b4dc;
 }
 
 /* Responsive Design */
@@ -1906,7 +1923,7 @@ footer {
 /* General Reset */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Nunito, sans-serif;
   background-color: #f9f9f9;
 }
 
@@ -1944,7 +1961,7 @@ body {
 
 /* Flight Header */
 .flight-header {
-  background: #0277bd;
+  background: #31b4dc;
   color: white;
   padding: 10px 15px;
   display: flex;
@@ -1981,12 +1998,12 @@ body {
   font-weight: bold;
   text-align: center;
   position: relative;
-  color: #0277bd;
+  color: #31b4dc;
 }
 
 .flight-route .flight-icon {
   margin: 0 10px;
-  color: #0277bd;
+  color: #31b4dc;
   font-size: 16px;
 }
 
@@ -2023,7 +2040,7 @@ body {
 }
 
 .read-more {
-  background-color: #0277bd;
+  background-color: #31b4dc;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -2035,10 +2052,9 @@ body {
 }
 
 .read-more:hover {
-  background-color: #0056b3;
+  background-color: #31b4dc;
   box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
 }
-
 
 .package-container {
   display: flex;
@@ -2089,7 +2105,7 @@ body {
 
 .package-meta span i {
   margin-right: 5px;
-  color: #007bff;
+  color: #31b4dc;
 }
 
 .package-footer {
@@ -2104,7 +2120,7 @@ body {
 }
 
 .btn-book {
-  background: #007bff;
+  background: #31b4dc;
   color: #fff;
   border: none;
   padding: 8px 15px;
@@ -2115,10 +2131,8 @@ body {
 }
 
 .btn-book:hover {
-  background: #0056b3;
+  background: #31b4dc;
 }
-
-
 
 .video-background-2 {
   position: absolute;
@@ -2127,6 +2141,432 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(80%);
+  filter: brightness(100%);
   z-index: -1; /* Keeps the video in the background */
 }
+
+.container-xxl {
+  overflow: hidden; /* Prevent overflow outside the visible area */
+  position: relative; /* Required for proper alignment */
+}
+
+.slider-wrapper {
+  display: flex;
+  animation: slide 20s linear infinite; /* Smooth sliding effect */
+  width: calc(100% * 4); /* Adjust based on the number of logos */
+}
+
+.logo {
+  width: 150px; /* Set equal width for all logos */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+  margin: 0 10px; /* Add spacing between logos */
+  background-color: transparent; /* Make background transparent */
+  mix-blend-mode: multiply;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0); /* Start from the initial position */
+  }
+  to {
+    transform: translateX(-100%); /* Move to the left end */
+  }
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+a[href*="https://elfsight.com"]
+{
+  display: none !important; /* Ensure the link is always hidden */
+}
+
+.autocomplete-suggestions {
+  position: absolute;
+  background: #fff;
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+}
+.autocomplete-suggestion {
+  padding: 10px;
+  cursor: pointer;
+}
+.autocomplete-suggestion:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* Global input styles */
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input hover effect */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="date"]:hover,
+input[type="number"]:hover {
+  border-color: #007bff;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Input focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+  background-color: #ffffff;
+}
+
+/* Suggestions box (autocomplete) */
+
+.autocomplete-suggestions div:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Placeholder text styling */
+input::placeholder {
+  color: #aaa;
+}
+
+/* Styling for form labels */
+label.form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Button styling */
+button[type="submit"] {
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* For small screens, ensure form fields stack properly */
+@media (max-width: 576px) {
+  .form-control {
+    margin-bottom: 10px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-header10 {
+    height: auto !important;
+    background-size: cover;
+  }
+}
+
+.bg-dark-header {
+  background-color: #fffdf0;
+  color: black;
+  font-weight: 500;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.btn-social {
+  width: 30px; /* Adjust size */
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px; /* Adjust icon size */
+  line-height: 30px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.btn-social:hover {
+  transform: scale(1.1);
+}
+
+/* Social Media Buttons */
+.btn-twitter {
+  background-color: #1da1f2; /* Twitter Blue */
+}
+
+.btn-facebook {
+  background-color: #3b5998; /* Facebook Blue */
+}
+
+.btn-linkedin {
+  background-color: #0077b5; /* LinkedIn Blue */
+}
+
+.btn-instagram {
+  background-color: #e4405f; /* Instagram Red */
+}
+
+.btn-youtube {
+  background-color: #ff0000; /* YouTube Red */
+}
+
+/* Call Button */
+
+/* Popup Modal */
+
+/* Phone number message styling */
+.utility__phone-msg {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Tooltip styling */
+.tooltip-feature {
+  visibility: hidden; /* Hidden by default */
+  opacity: 0;
+  position: absolute;
+  top: 100%; /* Position below the phone number */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 0.875rem;
+  width: 250px;
+  text-align: left;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+}
+
+/* Tooltip arrow */
+.tooltip-feature::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* Show tooltip on hover */
+.utility__phone:hover .tooltip-feature {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Add some styling to the points in the tooltip */
+.benefits-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.points-container {
+  margin-bottom: 10px;
+}
+
+.point-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.icon-check {
+  width: 16px;
+  height: 16px;
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.content {
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+/* Initially hide the tooltip */
+.tooltip-feature {
+  display: none; /* Hide tooltip initially */
+  position: absolute;
+  top: 100%; /* Position below the phone number */
+  left: 0;
+  margin-top: 10px; /* Optional, for spacing */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: max-content;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Show the tooltip when the phone number is hovered */
+.utility__phone:hover .tooltip-feature {
+  display: block;
+}
+
+.utility__phone {
+  position: relative;
+  display: inline-block; /* Ensure tooltip is positioned correctly */
+}
+
+.tooltip-feature .benefits-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.tooltip-feature .benefits-content {
+  margin-top: 10px;
+}
+
+.tooltip-feature .points-container {
+  margin-bottom: 10px;
+}
+
+.tooltip-feature .point-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tooltip-feature .icon-check {
+  width: 8px;
+  height: 8px;
+  background-color: #4caf50;
+  border-radius: 50%;
+}
+
+.tooltip-feature .content {
+  font-size: 14px;
+  color: #000;
+}
+
+/* Tooltip Styling */
+.tooltip-feature {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 400px !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100%; /* Position the tooltip below the phone number */
+  left: 20%;
+  margin-top: 10px;
+  z-index: 1000;
+}
+
+/* Title Styling */
+.benefits-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Benefits content container */
+.benefits-content {
+  display: flex;
+  flex-wrap: wrap; /* Wrap points to fit into the available space */
+  gap: 20px; /* Space between points */
+  justify-content: space-between; /* Distribute items evenly */
+}
+
+/* Points container and individual points */
+.points-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensure it wraps within the available width */
+  gap: 10px;
+}
+
+/* Each point with icon and content */
+.point-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 48%; /* Adjust width to make sure items fit in two columns */
+}
+
+/* Icon style */
+.icon-check {
+  width: 10px;
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 50%;
+}
+
+/* Content styling */
+.content {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Ensure it looks good on larger screens */
+@media (min-width: 768px) {
+  .tooltip-feature {
+    width: 300px; /* Wider tooltip for larger screens */
+  }
+
+  .point-wrap {
+    width: 48%; /* Points will fit better in two columns */
+  }
+}
+
+@media (max-width: 767px) {
+  .tooltip-feature {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .point-wrap {
+    width: 100%; /* Full width on small screens */
+    justify-content: flex-start;
+  }
+}
+
+
+/* Increase the gap between items inside the flex container */
+
+/* Additional margin for small elements if necessary */
+
+/* If needed, you can also add a margin to individual items for more control */
+
+
+
