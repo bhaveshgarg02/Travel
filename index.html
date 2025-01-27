@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Tourist - Travel Agency HTML Template</title>
+    <title>Cheap Prime Fares</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/logo.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,6 +31,11 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        a[href*="https://elfsight.com"] {
+  display: none !important; /* Ensure the link is always hidden */
+}   
+    </style>
 </head>
 
 <body>
@@ -44,44 +49,78 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-3 py-2">
+    <div class="container-fluid bg-dark-header px-3 py-2">
         <div class="row gx-0 align-items-center">
             <!-- Contact Information -->
             <div class="col-12 col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center justify-content-lg-start" style="gap: 10px; height: auto;">
-                    <small class="text-light">
-                        <i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA
-                    </small>
-                    <small class="text-light">
-                        <i class="fa fa-phone-alt me-2"></i>+8128134573
-                    </small>
-                    <small class="text-light">
-                        <i class="fa fa-envelope-open me-2"></i>info@cheapprimefares.com
-                    </small>
+                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center justify-content-lg-start" style="gap: 20px;">
+                    <small><i class="fa fa-map-marker-alt me-2 mr-3"></i>123 Street, New York, USA</small>
+                    
+                    <!-- Phone Number with Booking Feature -->
+                    <a href="tel:+91-9501737767" role="button" class="utility__phone utility__phone-number is-active" aria-label="Call us 24/7">
+                        <div class="utility__phone-number-image mr-3 ml-3" width="42" height="42"></div>
+                        <span class="utility__phone-msg" id="utility__phone-msg">
+                            <i class="fa fa-phone-alt"></i>
+                            <b id="utility__phone-number">+91-9501737767</b>
+                        </span>
+    
+                        <!-- Tooltip below the Phone Number -->
+                        <div class="tooltip-feature">
+                            <div class="benefits-title">Benefits of booking with us</div>
+                            <div class="benefits-content">
+                                <div class="points-container">
+                                    <div class="point-wrap">
+                                        <div class="icon-check"></div>
+                                        <div class="content">Personalized travel assistance by our live agents</div>
+                                    </div>
+                                    <div class="point-wrap">
+                                        <div class="icon-check"></div>
+                                        <div class="content">24-hour cancellation</div>
+                                    </div>
+                                </div>
+                                <div class="points-container">
+                                    <div class="point-wrap">
+                                        <div class="icon-check"></div>
+                                        <div class="content">Immediate booking confirmation</div>
+                                    </div>
+                                    <div class="point-wrap">
+                                        <div class="icon-check"></div>
+                                        <div class="content">Flexible payment plans</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+    
+                    <!-- Email -->
+                    <small><i class="fa fa-envelope-open me-2"></i>info@cheapprimefares.com</small>
                 </div>
             </div>
+    
             <!-- Social Icons -->
             <div class="col-12 col-lg-4 text-center text-lg-end">
-                <div class="d-flex justify-content-center justify-content-lg-end align-items-center" style="gap: 10px; height: auto;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="" style="line-height: 30px;">
+                <div class="d-flex justify-content-center justify-content-lg-end align-items-center" style="gap: 10px;">
+                    <a class="btn btn-sm btn-social btn-twitter rounded-circle" href="#">
                         <i class="fab fa-twitter fw-normal"></i>
                     </a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="" style="line-height: 30px;">
+                    <a class="btn btn-sm btn-social btn-facebook rounded-circle" href="#">
                         <i class="fab fa-facebook-f fw-normal"></i>
                     </a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="" style="line-height: 30px;">
+                    <a class="btn btn-sm btn-social btn-linkedin rounded-circle" href="#">
                         <i class="fab fa-linkedin-in fw-normal"></i>
                     </a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="" style="line-height: 30px;">
+                    <a class="btn btn-sm btn-social btn-instagram rounded-circle" href="#">
                         <i class="fab fa-instagram fw-normal"></i>
                     </a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href="" style="line-height: 30px;">
+                    <a class="btn btn-sm btn-social btn-youtube rounded-circle" href="#">
                         <i class="fab fa-youtube fw-normal"></i>
                     </a>
                 </div>
             </div>
         </div>
     </div>
+    
+       
     
     <!-- Topbar End -->
 
@@ -90,7 +129,7 @@
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
             <a href="" class="navbar-brand p-0">
-                <a href="" class="navbar-brand p-0">
+                <a href="index.html" class="navbar-brand p-0">
                     <img src="img/logo.png" alt="Logo" class="transparent-logo"> </a>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -99,13 +138,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">Who we are</a>
+                    <a href="about.html" class="nav-item nav-link">Who We Are</a>
 
                     <div class="nav-item dropdown">
                         <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Flights</a>
                         <div class="dropdown-menu m-0">
-                            <a href="usatoindia.html" class="dropdown-item">USA to India</a>
-                            <a href="indiatousa.html" class="dropdown-item">India to USA</a>
+                            <a href="usatoindia.html" class="dropdown-item">USA to India Flights</a>
+                            <a href="indiatousa.html" class="dropdown-item">India to USA Flights</a>
                             <a href="usatochennai.html" class="dropdown-item">USA to Chennai Flights</a>
                             <a href="1.html" class="dropdown-item">USA to Bangalore Flights</a>
                             <a href="2.html" class="dropdown-item">USA to Hyderabad Flights</a>
@@ -121,14 +160,14 @@
                     </div>
 
                     <div class="nav-item dropdown">
-                        <a href="package.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Holiday package </a>
+                        <a href="package.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Holiday Packages </a>
                         <div class="dropdown-menu m-0">
-                            <a href="tourpackages.html" class="dropdown-item">Domestic Tour packages</a>
-                            <a href="honeymoon.html" class="dropdown-item">Domestic Honeymoon packages</a>
-                            <a href="internationaltourpackages.html" class="dropdown-item">International Tour packages</a>
-                            <a href="internationalhoneymoon.html" class="dropdown-item">International Honeymoon packages</a>
-                            <a href="populartourpackages.html" class="dropdown-item">Popular Tour packages</a>
-                            <a href="popularhoneymoonpackages.html" class="dropdown-item">Popular Honeymoon packages</a>
+                            <a href="tourpackages.html" class="dropdown-item">Domestic Tour Packages</a>
+                            <a href="honeymoon.html" class="dropdown-item">Domestic Honeymoon Packages</a>
+                            <a href="internationaltourpackages.html" class="dropdown-item">International Tour Packages</a>
+                            <a href="internationalhoneymoon.html" class="dropdown-item">International Honeymoon Packages</a>
+                            <a href="populartourpackages.html" class="dropdown-item">Popular Tour Packages</a>
+                            <a href="popularhoneymoonpackages.html" class="dropdown-item">Popular Honeymoon Packages</a>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
@@ -142,7 +181,7 @@
                         </div>
                     </div>
                    
-                        <a href="contactus.html" class="nav-item nav-link">Contact us</a>
+                        <a href="contactus.html" class="nav-item nav-link">Contact Us</a>
                     <!--<a href="" class="btn btn-primary rounded-pill py-2 px-4">Register</a>-->
                 </div>
         </nav>
@@ -165,111 +204,71 @@
 
 
         <!-- Who we are Start -->
-        <div class="hero-header10">
-            <div class="container10">
-                <video autoplay muted loop playsinline class="video-background">
-                    <source src="../img/video.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                <div class="header">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyw5r5F8XQ46yW0kHgR_EY-8bvZvsSZdv3eg&s" alt="Flight Logo">
-                    <!-- Replace 'flight-logo.png' with the path to your logo -->
-                    <h1>Flights</h1>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="hero-header10">
+        <div class="container10">
+            <video autoplay muted loop playsinline class="video-background">
+                <source src="../img/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+
+            <form id="flight-form" class="row g-3">
+                <div class="col-12">
+                    <div class="d-flex gap-3">
+                        <label class="form-check-label"><input class="form-check-input" type="radio" name="trip" value="round-trip" checked> Round Trip</label>
+                        <label class="form-check-label"><input class="form-check-input" type="radio" name="trip" value="one-way"> One Way</label>
+                    </div>
                 </div>
 
-                <form action="#" method="get" class="form-container">
-                    <div class="radio-container">
-                        <label>
-                            <input type="radio" name="trip" value="round-trip" checked> Round Trip</label>
-                        <label>
-                            <input type="radio" name="trip" value="one-way"> One Way</label>
-                        <label>
-                            <input type="radio" name="trip" value="multi-city"> Multi-City</label>
-                    </div>
+                <div class="col-md-3 position-relative">
+                    <input type="text" name="from" id="from-airport" class="form-control" placeholder="From" required>
+                    <div id="from-suggestions" class="autocomplete-suggestions"></div>
+                </div>
+
+                <div class="col-md-3 position-relative">
+                    <input type="text" name="to" id="to-airport" class="form-control" placeholder="To" required>
+                    <div id="to-suggestions" class="autocomplete-suggestions"></div>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="depart" class="form-label">Depart Date</label>
+                    <input type="date" name="depart" class="form-control" id="depart" required>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="return" class="form-label">Return Date</label>
+                    <input type="date" name="return" class="form-control" id="return">
+                </div>
 
 
-                    <select name="from">
-                        <option value="economy">Sydney Airport</option>
-                        <option value="business">Perth airport?</optioern>
-                            <option value="first">Gold Coast Airport</option>
-                            <option value="economy">Habart International Airport</option>
-                            <option value="business">Townsville Airport</optioern>
-                                <option value="first">Mount Isa Airport</option>
-                                <option value="economy">Hamilton Island Airport</option>
-                                <option value="business">Bathurs Island Airport</optioern>
-                                    <option value="first">Archerfield Airport</option>
-                                    <option value="economy">Smith Point Airport</option>
-                                    <option value="business">Brisbane Airport</optioern>
-                                        <option value="first">Darwin International Airport</option>
-                                        <option value="economy">Horn Island Airport</option>
-                                        <option value="business">Sunshine Coast Airport</optioern>
-                                            <option value="first">Mackay Airport</option>
-                                            <option value="economy">Whitsunday Coast Airport</option>
-                                            <option value="business">Gladstone Airport</optioern>
-                                                <option value="first">Canberra Airport</option>
-                                                <option value="economy">South Goulburn Island Airport</option>
-                                                <option value="business">Christmas Island International Airport</optioern>
-                                                    <option value="first"> Melbourne Airport</option>
-                                                    <option value="economy">Cairns Airport</option>
-                                                    <option value="business">Port Hedland International Airport</optioern>
-                                                        <option value="first">Broome International</option>
-                    </select>
-                    <select name="to">
-                        <option value="economy">Sydney Airport</option>
-                        <option value="business">Perth airport?</optioern>
-                            <option value="first">Gold Coast Airport</option>
-                            <option value="economy">Habart International Airport</option>
-                            <option value="business">Townsville Airport</optioern>
-                                <option value="first">Mount Isa Airport</option>
-                                <option value="economy">Hamilton Island Airport</option>
-                                <option value="business">Bathurs Island Airport</optioern>
-                                    <option value="first">Archerfield Airport</option>
-                                    <option value="economy">Smith Point Airport</option>
-                                    <option value="business">Brisbane Airport</optioern>
-                                        <option value="first">Darwin International Airport</option>
-                                        <option value="economy">Horn Island Airport</option>
-                                        <option value="business">Sunshine Coast Airport</optioern>
-                                            <option value="first">Mackay Airport</option>
-                                            <option value="economy">Whitsunday Coast Airport</option>
-                                            <option value="business">Gladstone Airport</optioern>
-                                                <option value="first">Canberra Airport</option>
-                                                <option value="economy">South Goulburn Island Airport</option>
-                                                <option value="business">Christmas Island International Airport</optioern>00
-                                                    <option value="first"> Melbourne Airport</option>
-                                                    <option value="economy">Cairns Airport</option>
-                                                    <option value="business">Port Hedland International Airport</optioern>
-                                                        <option value="first">Broome International</option>
-                                                        <!-- Add more airports as needed -->
-                    </select>
+                <div class="col-md-3">
+                    <label for="travelers" class="form-label">Travellers</label>
+                    <input type="number" name="travelers" class="form-control" id="travelers" placeholder="No. of Travellers" min="1" required>
+                </div>
 
-                    <input type="date" name="depart" required>
-                    <input type="date" name="return">
-
-                    <select name="class">
-                        <option value="economy">Economy</option>
-                        <option value="business">Business</option>
-                        <option value="first">First Class</option>
-                    </select>
-
-                    <input type="number" name="travelers" placeholder="1 Traveler" min="1" required>
-
-                    <div class="checkbox-container">
-                        <label>
-                            <input type="checkbox" name="return-diff-city"> Return to/from another city/airport?
-                        </label>
-                    </div>
-                    <div class="checkbox-container">
-                        <label>
-                            <input type="checkbox" name="direct"> Direct Flights
-                        </label>
-                    </div>
-
-                    <a href="https://wa.me/919501737767" target="_blank">
-                        <button type="button">Search Flight</button>
-                    </a>
-                </form>
-            </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Search Flights</button>
+                </div>
+            </form>
         </div>
+    </div>
 
 
         <!-- Who we are Start -->
@@ -285,7 +284,7 @@
                         <!-- Flight Card 1 -->
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPRQ9IYaScC8tbsFGDmgHsM-ZRIozS4YnL2A&s" alt="Flight Image">
+                                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/7b/01/1d/caption.jpg?w=1200&h=-1&s=1&cx=1920&cy=1080&chk=v1_4de65d90c08149c68f26" alt="Flight Image">
                             </div>
                             <div class="flight-header">
                                 <span class="flight-date">24 Aug 25</span>
@@ -316,7 +315,7 @@
                         <!-- Flight Card 2 -->
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUOiXObYzCAQvSS75ms-1U_dOrWHYLz8PjtA&s"
+                                <img src="https://i.natgeofe.com/n/874df281-d3e0-489a-98c0-6b840023b828/newyork_NationalGeographic_2328428_2x1.jpg"
                                     alt="Flight Image">
 
                             </div>
@@ -349,7 +348,7 @@
                         <!-- Flight Card 3 -->
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR92UJmvylaIVmlPIX_NWqZ3tE1uATsfqGnwQ&s">
+                                <img src="https://cdn.sixtyandme.com/wp-content/uploads/2024/01/Sixty-and-Me_6-Wonderful-Places-to-Visit-in-Washington-State.jpg">
                             </div>
                             <div class="flight-header">
                                 <span class="flight-date">10 Mar 25</span>
@@ -362,7 +361,7 @@
                                     <span class="to-code">BOM</span>
                                 </div>
                                 <div class="flight-cities">
-                                    <span class="from-city">WAshington DC</span>
+                                    <span class="from-city">Washington DC</span>
                                     <span class="to-city">Mumbai</span>
                                 </div>
                                 <div class="flight-footer">
@@ -382,7 +381,7 @@
                         <!-- Flight Card 1 -->
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdZ71lzkPNoTFzvzYhRDLRVeHeGNHgt_ss9g&s" alt="Flight Image">
+                                <img src="https://cdn.sixtyandme.com/wp-content/uploads/2024/01/Sixty-and-Me_6-Wonderful-Places-to-Visit-in-Washington-State.jpg" alt="Flight Image">
                             </div>
                             <div class="flight-header">
                                 <span class="flight-date">10 Mar 25</span>
@@ -413,7 +412,7 @@
                         <!-- Flight Card 2 -->
                         <div class="card">
                             <div class="card-image">
-                                <img src="data:image/jpeg;base64,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"
+                                <img src="https://www.kiomoi.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fkmadmin%2Fimage%2Fupload%2Fv1560260650%2Fkiomoi%2FAhmedabad%2Fkankaria%2520Lake%2520%2520%25281%2529.webp&w=3840&q=75"
                                     alt="Flight Image">
 
                             </div>
@@ -425,11 +424,11 @@
                                 <div class="flight-route">
                                     <span class="from-code">JFK</span>
                                     <i class="fa fa-plane flight-icon"></i>
-                                    <span class="to-code">New York</span>
+                                    <span class="to-code">AHM</span>
                                 </div>
                                 <div class="flight-cities">
-                                    <span class="from-city">DLK</span>
-                                    <span class="to-city">Delhi</span>
+                                    <span class="from-city">New York</span>
+                                    <span class="to-city">Ahmedabad</span>
                                 </div>
                                 <div class="flight-footer">
                                     <div class="price-and-button" style="display: flex; align-items: center; justify-content: space-between;">
@@ -446,7 +445,7 @@
                         <!-- Flight Card 3 -->
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg288t-l2Br-SqEuVQWtb45E00PPz9OqNyhw&s">
+                                <img src="https://img.traveltriangle.com/apac/attachments/pictures/1106818/original/Beautiful_view_of_colorful_gopura_in_the_Hindu_Kapaleeshwarar_Temple_in_Chennai.jpg">
                             </div>
                             <div class="flight-header">
                                 <span class="flight-date">10 Mar 25</span>
@@ -454,13 +453,13 @@
                             </div>
                             <div class="flight-body">
                                 <div class="flight-route">
-                                    <span class="from-code">JFK</span>
+                                    <span class="from-code">DEL</span>
                                     <i class="fa fa-plane flight-icon"></i>
-                                    <span class="to-code">BOM</span>
+                                    <span class="to-code">MAA</span>
                                 </div>
                                 <div class="flight-cities">
-                                    <span class="from-city">New York</span>
-                                    <span class="to-city">Mumbai</span>
+                                    <span class="from-city">Delhi</span>
+                                    <span class="to-city">Chennai</span>
                                 </div>
                                 <div class="flight-footer">
                                     <div class="price-and-button" style="display: flex; align-items: center; justify-content: space-between;">
@@ -479,7 +478,7 @@
                         <!-- Flight Card 1 -->
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhCVFpjhGoIgx18TqJOQrPLkoKK168sZwpQw&s">
+                                <img src="https://lp-cms-production.imgix.net/2019-06/ab5c55eb6f981026230a95dfb052a51d-taj-mahal-palace-mumbai.jpg">
                             </div>
                             <div class="flight-header">
                                 <span class="flight-date">10 Mar 25</span>
@@ -510,7 +509,7 @@
                         <!-- Flight Card 2 -->
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMMYTps3VNusfSdbpEF06UDuamqoRtoGXxrw&s"
+                                <img src="https://www.chennaitourstravelss.com/images/car/detail/mahabalipuram.webp"
                                     alt="Flight Image">
 
                             </div>
@@ -543,7 +542,7 @@
                         <!-- Flight Card 3 -->
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPRQ9IYaScC8tbsFGDmgHsM-ZRIozS4YnL2A&s" alt="Flight Image">
+                                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/df/65/c1/caption.jpg?w=1200&h=-1&s=1" alt="Flight Image">
                             </div>
                             <div class="flight-header">
                                 <span class="flight-date">10  Mar 25</span>
@@ -576,7 +575,7 @@
                         <!-- Flight Card 1 -->
                         <div class="card">
                             <div class="card-image">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPRQ9IYaScC8tbsFGDmgHsM-ZRIozS4YnL2A&s" alt="Flight Image">
+                                <img src="https://www.leisurekart.com/blog/wp-content/uploads/2024/04/Places-to-visit-in-Mumbai-Mohammed-Ali-Road.jpg" alt="Flight Image">
                             </div>
                             <div class="flight-header">
                                 <span class="flight-date">20 Mar 25</span>
@@ -607,7 +606,7 @@
                         <!-- Flight Card 2 -->
                         <div class="card">
                             <div class="card-image">
-                                <img src="data:image/jpeg;base64,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"
+                                <img src="https://media1.thrillophilia.com/filestore/oiek6gvp0gw7njpe0lf43fzscq6m_1618909202_shutterstock_248799484.jpg?w=753&h=450&dpr=2.0"
                                     alt="Flight Image">
 
                             </div>
@@ -640,7 +639,7 @@
                         <!-- Flight Card 3 -->
                         <div class="card">
                             <div class="card-image">
-                                <img src="data:image/jpeg;base64,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" alt="Flight Image">
+                                <img src="https://hashtagmagazine.in/wp-content/uploads/2022/01/116019762_1478168169058280_3535475760811858089_n.jpg" alt="Flight Image">
                             </div>
                             <div class="flight-header">
                                 <span class="flight-date">1 Apr 25</span>
@@ -694,13 +693,13 @@
                 <div class="row g-5">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
                         <div class="position-relative h-100">
-                            <img class="img-fluid position-absolute w-100 h-100" src="img/pic4.jpg" alt="" style="object-fit: cover;">
+                            <img class="img-fluid position-absolute w-100 h-100" src="img/img-main.jpg" alt="" style="object-fit: cover;">
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                         <h6 class="section-title text-start text-primary pe-3">Who we are </h6>
                         <h1 class="mb-4">Welcome to
-                            <span class="text-primary">Tourist</span>
+                            <span class="text-primary">Cheap Prime Fares</span>
                         </h1>
                         <p class="mb-4"> At Cheap Prime Fares, we are more than just a travel agency—we’re your dedicated travel experts.
                             Our mission is to deliver travel solutions that go beyond your expectations. We achieve this
@@ -746,7 +745,7 @@
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
 
-                    <h1 class="mb-5">Details of Tour</h1>
+                    <h1 class="mb-5">Popular Tour Packages</h1>
                 </div>
                 <div class="package-container">
                     <!-- Package Card 1 -->
@@ -1249,13 +1248,13 @@
 
 
 
-            <div class="container-xxl py-5">
-                <div class="container">
-                    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                        <h6 class="section-title video.mp4 text-center text-primary px-3">Travel Guide</h6>
-                        <h1 class="mb-5"> Our Partners </h1>
-                    </div>
-                    <div class="logo-slider">
+                <div class="container-xxl py-5">
+                    <div class="container">
+                      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                        <h6 class="section-title text-center text-primary px-3">Travel Guide</h6>
+                        <h1 class="mb-5">Our Partners</h1>
+                      </div>
+                      <div class="logo-slider">
                         <div class="slider-wrapper">
                             <!-- Add your logos here -->
                             <img class="logo" src="img/logo1.png" alt="Logo 1">
@@ -1282,7 +1281,30 @@
                             <img class="logo" src="img/flight logo 6.webp" alt="Logo 6">
                             <img class="logo" src="img/flight logo 7.png" alt="Logo 1">
                             <img class="logo" src="img/flight logo 8.png" alt="Logo 2">
-
+                            <img class="logo" src="img/logo1.png" alt="Logo 1">
+                            <img class="logo" src="img/logo2.avif" alt="Logo 2">
+                            <img class="logo" src="img/logo3.png" alt="Logo 3">
+                            <img class="logo" src="img/logo5.webp" alt="Logo 5">
+                            <img class="logo" src="img/flight logo 1.png" alt="Logo 6">
+                            <img class="logo" src="img/flight logo 2.png" alt="Logo 1">
+                            <img class="logo" src="img/flight logo 4.png" alt="Logo 2">
+                            <img class="logo" src="img/flight loo 3.png" alt="Logo 3">
+                            <img class="logo" src="img/flight logo 5.png" alt="Logo 5">
+                            <img class="logo" src="img/flight logo 6.webp" alt="Logo 6">
+                            <img class="logo" src="img/flight logo 7.png" alt="Logo 1">
+                            <img class="logo" src="img/flight logo 8.png" alt="Logo 2">
+                            <img class="logo" src="img/logo1.png" alt="Logo 1">
+                            <img class="logo" src="img/logo2.avif" alt="Logo 2">
+                            <img class="logo" src="img/logo3.png" alt="Logo 3">
+                            <img class="logo" src="img/logo5.webp" alt="Logo 5">
+                            <img class="logo" src="img/flight logo 1.png" alt="Logo 6">
+                            <img class="logo" src="img/flight logo 2.png" alt="Logo 1">
+                            <img class="logo" src="img/flight logo 4.png" alt="Logo 2">
+                            <img class="logo" src="img/flight loo 3.png" alt="Logo 3">
+                            <img class="logo" src="img/flight logo 5.png" alt="Logo 5">
+                            <img class="logo" src="img/flight logo 6.webp" alt="Logo 6">
+                            <img class="logo" src="img/flight logo 7.png" alt="Logo 1">
+                            <img class="logo" src="img/flight logo 8.png" alt="Logo 2">
 
                         </div>
                     </div>
@@ -1295,7 +1317,7 @@
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
+            <div class="py-5">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <h4 class="text-white mb-3">Important Link</h4>
@@ -1417,6 +1439,11 @@
 
 
         <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
                 function removeElfsightLink() {
@@ -1437,14 +1464,191 @@
                 observer.observe(document.body, { childList: true, subtree: true });
             });
         </script>
+   <script>
+    // Google Sheets API configuration
+    const SHEET_ID = '1Dw0f9jeHftUGX5Lq2Pmp-670ClWZ3zyXmyEwYacUOxU';
+    const API_KEY = 'YOUR_GOOGLE_API_KEY'; // Replace with your API key
+    const SHEET_URL = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/Sheet1!A1:append?valueInputOption=USER_ENTERED&key=${API_KEY}`;
+
+    // Fetch airport data from the API
+    let airports = [];
+    async function fetchAirports() {
+        const response = await fetch('https://api.shipratravel.com/flightSearch/api/Flights/GetAirportsDataNew');
+        airports = await response.json();
+    }
+
+    // Display suggestions based on user input
+    function showSuggestions(input, suggestionsBox, value) {
+        const filteredAirports = airports.filter(airport =>
+            airport.label.toLowerCase().includes(value.toLowerCase()) ||
+            airport.value.toLowerCase().includes(value.toLowerCase())
+        );
+
+        suggestionsBox.innerHTML = '';
+
+        filteredAirports.forEach(airport => {
+            const div = document.createElement('div');
+            div.className = 'autocomplete-suggestion';
+            div.textContent = airport.label;
+            div.addEventListener('click', () => {
+                input.value = airport.label;
+                suggestionsBox.innerHTML = '';
+            });
+            suggestionsBox.appendChild(div);
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        fetchAirports();
+
+        const fromInput = document.getElementById('from-airport');
+        const fromSuggestions = document.getElementById('from-suggestions');
+        const toInput = document.getElementById('to-airport');
+        const toSuggestions = document.getElementById('to-suggestions');
+
+        fromInput.addEventListener('input', () => {
+            showSuggestions(fromInput, fromSuggestions, fromInput.value);
+        });
+
+        toInput.addEventListener('input', () => {
+            showSuggestions(toInput, toSuggestions, toInput.value);
+        });
+    });
+
+    // Save form data to Google Sheet
+    async function saveToGoogleSheet(formData) {
+        const rowData = Object.values(formData);
+        const requestBody = {
+            values: [rowData]
+        };
+
+        try {
+            const response = await fetch(SHEET_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(requestBody)
+            });
+
+            if (response.ok) {
+                alert('Your flight search data has been saved to Google Sheet!');
+            } else {
+                alert('Failed to save data to Google Sheet.');
+            }
+        } catch (error) {
+            console.error('Error saving to Google Sheet:', error);
+            alert('An error occurred while saving data to Google Sheet.');
+        }
+    }
+
+    // Handle form submission
+    document.getElementById('flight-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const formData = {};
+        new FormData(this).forEach((value, key) => {
+            formData[key] = value;
+        });
+
+        saveToGoogleSheet(formData);
+    });
+</script>
+<script>
+    // Get the trip radio buttons and return date input field
+    const tripRadioButtons = document.querySelectorAll('input[name="trip"]');
+    const returnDateInput = document.getElementById('return');
+
+    // Function to handle the change in trip type
+    function updateReturnDateState() {
+        const selectedTripType = document.querySelector('input[name="trip"]:checked').value;
+        if (selectedTripType === 'one-way') {
+            returnDateInput.disabled = true;
+            returnDateInput.value = ''; // Clear return date when disabled
+        } else {
+            returnDateInput.disabled = false;
+        }
+    }
+
+    // Add event listeners to the radio buttons
+    tripRadioButtons.forEach(radio => {
+        radio.addEventListener('change', updateReturnDateState);
+    });
+
+    // Initialize the state on page load
+    document.addEventListener('DOMContentLoaded', updateReturnDateState);
+</script>
 
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const unwantedLink = document.querySelector('a[href*="https://elfsight.com"]');
+      if (unwantedLink) {
+        unwantedLink.style.display = 'none'; // Hide the link
+        // unwantedLink.remove(); // Uncomment to completely remove the element
+      }
+    });
+  </script>
+  <script>
+	document.addEventListener("DOMContentLoaded", function() {
+		function removeElfsightLink() {
+			var elfsightLink = document.querySelector('a[href*="elfsight.com/google-reviews-widget"]');
+			if (elfsightLink) {
+				elfsightLink.style.display = 'none'; // Hide the element
+			}
+		}
+	
+		// Remove immediately if it exists
+		removeElfsightLink();
+	
+		// Continuously observe the DOM for changes
+		var observer = new MutationObserver(function() {
+			removeElfsightLink();
+		});
+	
+		observer.observe(document.body, { childList: true, subtree: true });
+	});
+    const iframe = document.querySelector('iframe');
+if (iframe) {
+  const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+  const unwantedLink = iframeDoc.querySelector('a[href*="https://elfsight.com"]');
+  if (unwantedLink) {
+    unwantedLink.style.display = 'none'; // Hide inside iframe
+  }
+}
+	</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const unwantedLink = document.querySelector('a[href*="https://elfsight.com"]');
+      if (unwantedLink) {
+        unwantedLink.remove(); // Completely removes the element
+        // Or hide it without removing:
+        // unwantedLink.style.display = 'none';
+      }
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+  const unwantedLink = document.querySelector('a[href*="https://elfsight.com"]');
+  if (unwantedLink && unwantedLink.parentElement) {
+    unwantedLink.parentElement.remove();
+  }
+});
+const observer = new MutationObserver(() => {
+  const unwantedLink = document.querySelector('a[href*="https://elfsight.com"]');
+  if (unwantedLink) {
+    unwantedLink.remove();
+  }
+});
+
+// Observe changes to the entire document
+
+
+  </script>
 
 
 
-
+  
+  
 </body>
 
 </html>
